@@ -9,6 +9,31 @@
 </head>
 <body>
 
+  <!-- Mobile Drawer -->
+  <div class="drawerOverlay" data-drawer-overlay></div>
+  <aside class="drawer" aria-label="Mobile menu">
+    <div class="drawerHeader">
+      <div class="drawerTitle">Menu</div>
+      <button class="closeBtn" type="button" aria-label="Close menu" data-close-drawer>
+        ✕
+      </button>
+    </div>
+
+    <nav class="drawerNav">
+      <a href="index.html">Home</a>
+      <a href="pillar-bodywork.html">Bodywork</a>
+      <a href="pillar-stretching.html">Stretching</a>
+      <a href="pillar-coordination.html">Coordination</a>
+      <a href="pillar-mind.html">Mind</a>
+      <a href="#membership">Membership</a>
+    </nav>
+
+    <div class="drawerActions">
+      <a class="btn btn-primary" href="BOOKING_URL" target="_blank" rel="noopener">BOOK A CLASS</a>
+      <a class="btn btn-ghost" href="#pillars">Explore Pillars</a>
+    </div>
+  </aside>
+
   <!-- Top Navigation -->
   <div class="topbar">
     <div class="container">
@@ -25,9 +50,13 @@
         </div>
 
         <div class="actions">
-          <a class="btn btn-ghost" href="#membership">Membership</a>
-          <!-- Replace BOOKING_URL with your real booking link -->
           <a class="btn btn-primary" href="BOOKING_URL" target="_blank" rel="noopener">BOOK A CLASS</a>
+
+          <button class="hamburger" type="button" aria-label="Open menu" data-open-drawer>
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </button>
         </div>
       </div>
     </div>
@@ -37,27 +66,23 @@
   <header class="hero">
     <div class="container">
       <div class="heroGrid">
-
         <div>
           <div class="kicker"><span class="dot"></span> Four pillars. One path.</div>
-          <h1>Feel great in a body that moves with grace, precision, and purpose.</h1>
+          <h1>Move better. Feel stronger. Live lighter.</h1>
           <p class="subhead">
-            OneCore.Fitness is a simple system built on <strong>4 pillars</strong>.
-            Each session helps you build strength, restore range, improve coordination, and train focus—so movement becomes effortless.
+            OneCore.Fitness is built on <strong>4 pillars</strong>. We keep it simple:
+            strength, range, coordination, and mind—so movement becomes effortless.
           </p>
 
           <div class="heroCtas">
             <a class="btn btn-primary" href="BOOKING_URL" target="_blank" rel="noopener">BOOK A CLASS</a>
-            <a class="btn btn-ghost" href="#pillars">Explore the 4 Pillars</a>
+            <a class="btn btn-ghost" href="#pillars">See the 4 pillars</a>
           </div>
         </div>
 
         <aside class="heroCard" aria-label="Four pillars summary">
-          <div>
-            <h3>What we do (in plain terms)</h3>
-            <p>We break complex ideas into clear steps you can feel—fast.</p>
-          </div>
-
+          <h3>What you’ll train</h3>
+          <p>Everything maps back to the same 4 principles.</p>
           <ul>
             <li class="pill"><strong>1) Bodywork</strong><span>Strength + control</span></li>
             <li class="pill"><strong>2) Stretching</strong><span>Range + decompression</span></li>
@@ -65,7 +90,6 @@
             <li class="pill"><strong>4) Mind</strong><span>Focus + nervous system</span></li>
           </ul>
         </aside>
-
       </div>
     </div>
   </header>
@@ -73,11 +97,10 @@
   <!-- Pillars -->
   <section id="pillars" class="section">
     <div class="container">
-
       <div class="sectionHead">
         <div>
           <h2>The 4 Pillars</h2>
-          <p>Everything we do maps back to these four principles.</p>
+          <p>Simple steps on the path to moving with grace, precision, and purpose.</p>
         </div>
       </div>
 
@@ -85,50 +108,48 @@
         <a class="card" href="pillar-bodywork.html">
           <div class="badge"><span class="icon"></span> Pillar 1</div>
           <h3>Bodywork</h3>
-          <p>Strength training organized by how your body actually works—upper body, torso, and legs—built for stability.</p>
+          <p>Strength organized by upper body, torso, and legs—built for stability.</p>
           <div class="more"><span>Learn more</span><span>→</span></div>
         </a>
 
         <a class="card" href="pillar-stretching.html">
           <div class="badge"><span class="icon"></span> Pillar 2</div>
           <h3>Stretching</h3>
-          <p>Structured mobility and decompression routines to restore range and reduce tension patterns.</p>
+          <p>Structured mobility and decompression routines to restore range.</p>
           <div class="more"><span>Learn more</span><span>→</span></div>
         </a>
 
         <a class="card" href="pillar-coordination.html">
           <div class="badge"><span class="icon"></span> Pillar 3</div>
           <h3>Coordination</h3>
-          <p>Balance, timing, and control—so strength and flexibility translate into real movement.</p>
+          <p>Balance, timing, and control—so progress shows up in real life.</p>
           <div class="more"><span>Learn more</span><span>→</span></div>
         </a>
 
         <a class="card" href="pillar-mind.html">
           <div class="badge"><span class="icon"></span> Pillar 4</div>
           <h3>Mind</h3>
-          <p>Training attention and nervous system control—beyond “sit still and be quiet.”</p>
+          <p>Focus + nervous system training that goes beyond “sit still.”</p>
           <div class="more"><span>Learn more</span><span>→</span></div>
         </a>
       </div>
-
     </div>
   </section>
 
   <!-- Membership / CTA -->
   <section id="membership" class="section">
     <div class="container">
-
       <div class="sectionHead">
         <div>
           <h2>Start simple</h2>
-          <p>Book a class. Follow the pillars. Build a body that moves better.</p>
+          <p>Book a class. Follow the pillars. Move better week by week.</p>
         </div>
       </div>
 
       <div class="split">
         <div class="panel">
           <h4>Book a Class</h4>
-          <p>Choose a session and get moving. We’ll guide you pillar-by-pillar.</p>
+          <p>Pick a session. We guide you pillar-by-pillar.</p>
           <div class="heroCtas" style="margin-top:12px;">
             <a class="btn btn-primary" href="BOOKING_URL" target="_blank" rel="noopener">BOOK A CLASS</a>
             <a class="btn btn-ghost" href="pillar-bodywork.html">Start with Bodywork</a>
@@ -137,15 +158,14 @@
 
         <div class="panel">
           <h4>Membership</h4>
-          <p>Consistency wins. Membership supports a steady path across all four pillars.</p>
+          <p>Consistency wins. Membership keeps your progress steady across all four pillars.</p>
           <ul class="bullets">
             <li>Strength + mobility balanced weekly</li>
-            <li>Coordination work built into progressions</li>
-            <li>Mind training that transfers to daily life</li>
+            <li>Coordination built into progressions</li>
+            <li>Mind training that transfers to life</li>
           </ul>
         </div>
       </div>
-
     </div>
   </section>
 
@@ -153,7 +173,7 @@
     <div class="container">
       <div class="footerRow">
         <div>© <span id="y"></span> OneCore.Fitness</div>
-        <div>Four pillars: Bodywork • Stretching • Coordination • Mind</div>
+        <div>Bodywork • Stretching • Coordination • Mind</div>
       </div>
     </div>
   </footer>
@@ -161,5 +181,6 @@
   <script>
     document.getElementById('y').textContent = new Date().getFullYear();
   </script>
+  <script src="app.js"></script>
 </body>
 </html>

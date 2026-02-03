@@ -9,14 +9,38 @@
 </head>
 <body>
 
+  <!-- Mobile Drawer -->
+  <div class="drawerOverlay" data-drawer-overlay></div>
+  <aside class="drawer" aria-label="Mobile menu">
+    <div class="drawerHeader">
+      <div class="drawerTitle">Menu</div>
+      <button class="closeBtn" type="button" aria-label="Close menu" data-close-drawer>✕</button>
+    </div>
+
+    <nav class="drawerNav">
+      <a href="index.html">Home</a>
+      <a href="pillar-bodywork.html">Bodywork</a>
+      <a href="pillar-stretching.html">Stretching</a>
+      <a href="pillar-coordination.html">Coordination</a>
+      <a href="pillar-mind.html">Mind</a>
+      <a href="index.html#membership">Membership</a>
+    </nav>
+
+    <div class="drawerActions">
+      <a class="btn btn-primary" href="BOOKING_URL" target="_blank" rel="noopener">BOOK A CLASS</a>
+      <a class="btn btn-ghost" href="index.html#pillars">Back to Pillars</a>
+    </div>
+  </aside>
+
+  <!-- Top Navigation -->
   <div class="topbar">
     <div class="container">
       <div class="nav">
-        <a class="brand" href="index.html">
+        <a class="brand" href="index.html" aria-label="OneCore.Fitness home">
           <img src="https://storage.googleapis.com/msgsndr/VlsfWgfLbf4xLfQJOYty/media/69816e901f68d13dde38b764.png" alt="OneCore.Fitness logo" />
         </a>
 
-        <div class="navlinks">
+        <div class="navlinks" aria-label="Primary navigation">
           <a href="pillar-bodywork.html">Bodywork</a>
           <a href="pillar-stretching.html">Stretching</a>
           <a href="pillar-coordination.html">Coordination</a>
@@ -24,13 +48,18 @@
         </div>
 
         <div class="actions">
-          <a class="btn btn-ghost" href="index.html#membership">Membership</a>
           <a class="btn btn-primary" href="BOOKING_URL" target="_blank" rel="noopener">BOOK A CLASS</a>
+          <button class="hamburger" type="button" aria-label="Open menu" data-open-drawer>
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </button>
         </div>
       </div>
     </div>
   </div>
 
+  <!-- Page Hero -->
   <header class="hero">
     <div class="container">
       <div class="kicker"><span class="dot"></span> Pillar 4</div>
@@ -38,6 +67,7 @@
       <p class="subhead">
         Mind training that transfers into life: attention, breath, and nervous system control—often in motion.
       </p>
+
       <div class="heroCtas">
         <a class="btn btn-primary" href="BOOKING_URL" target="_blank" rel="noopener">BOOK A CLASS</a>
         <a class="btn btn-ghost" href="index.html#pillars">Back to Pillars</a>
@@ -48,7 +78,6 @@
   <section class="section">
     <div class="container">
       <div class="split">
-
         <div class="panel">
           <h4>What this pillar trains</h4>
           <ul class="bullets">
@@ -59,14 +88,24 @@
         </div>
 
         <div class="panel">
-          <h4>What it’s not</h4>
+          <h4>How it’s different</h4>
           <ul class="bullets">
             <li>Not only sitting still</li>
-            <li>Not vague “positive thinking”</li>
-            <li>Not complicated—just consistent</li>
+            <li>Practical drills you can repeat</li>
+            <li>Designed to improve movement control</li>
           </ul>
         </div>
+      </div>
 
+      <div style="height:12px"></div>
+
+      <div class="panel">
+        <h4>Simple examples</h4>
+        <ul class="bullets">
+          <li>Attention anchoring while moving</li>
+          <li>Breath patterns that downshift stress</li>
+          <li>Awareness drills for posture and balance</li>
+        </ul>
       </div>
     </div>
   </section>
@@ -81,5 +120,6 @@
   </footer>
 
   <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  <script src="app.js"></script>
 </body>
 </html>
